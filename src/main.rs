@@ -2,18 +2,14 @@ mod actions;
 mod utils;
 mod bill;
 
-use utils::get_action;
-use utils::get_welcome_note;
-
-use actions::add_bill;
-use actions::edit_bill;
-use actions::remove_bill;
-use actions::view_bills;
-use actions::Actions::*;
 use std::collections::HashMap;
 
+use utils::*;
 
-use crate::bill::Bill;
+use actions::*;
+use Actions::*;
+
+use bill::Bill;
 
 fn main() {
     println!("Welcome to Bill Management Services\n");

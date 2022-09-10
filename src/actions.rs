@@ -1,6 +1,6 @@
+use std::collections::HashMap;
 use crate::bill::Bill;
 use crate::utils::get_input;
-use std::collections::HashMap;
 
 #[derive(Debug)]
 
@@ -80,7 +80,7 @@ pub fn remove_bill(bills: &mut HashMap<String, Bill>) {
                 input => {
                     if input.to_lowercase() != "y" {
                         println!("cancelled");
-                        ()
+                        return;
                     }
                 }
             }
